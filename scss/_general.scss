@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 64px;
+  height: 40px;
+}
+
+h1 {
+  font-family: $f-t2;
+  font-weight: 700;
+}
+
+p {
+  font-size: $f-size;
+  font-family: $f-t1;
+  font-weight: 400;
+}
+
+a {
+  font-family: $f-t1;
+  font-weight: 400;
+  font-size: $f-size;
+}
