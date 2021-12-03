@@ -1,31 +1,30 @@
-// Primary colors
-$bright-orange: hsl(31, 77%, 52%);
-$dark-cyan: hsl(184, 100%, 22%);
-$very-dark-cyan: hsl(179, 100%, 13%);
-
+// Primary
+$clr-bright-orange: hsl(31, 77%, 52%);
+$clr-dark-cyan: hsl(184, 100%, 22%);
+$clr-very-dark-cyan: hsl(179, 100%, 13%);
 // Neutral
-$trans-white: hsla(0, 0%, 100%, 0.75); // <p>
-$light-gray: hsl(0, 0%, 95%); // bg, headings, btn
+$clr-trans-white: hsla(0, 0%, 100%, 0.75); // <p>
+$clr-light-gray: hsl(0, 0%, 95%); // bg, headings, btn
+$clr-black: hsl(0, 0%, 0%);
+$clr-white: hsl(0, 0%, 100%);
 
-// Font config
-$f-size: 15px;
-$f-t1: "Lexend Deca", sans-serif;
-$f-t2: "Big Shoulders Display", cursive;
+// Typography
+$ff-sans-normal: "Lexend Deca", sans-serif;
+$ff-cursive: "Big Shoulders Display", cursive;
+$fs-900: 3rem;
+$fs-800: 2.25rem;
+$fs-700: 1.75rem;
+$fs-600: 1.5rem;
+$fs-500: 1.225rem;
+$fs-400: 1.125rem;
+$fs-300: 1rem;
+$fs-200: 0.875rem;
+//  utilities
+$border-rad: 1rem;
+$line-height: 1.5;
 
-// margin & padding classes
-$spaceamounts: (1, 2, 3, 4, 5, 6, 7, 8, 9);
-
-@each $space in $spaceamounts {
-  .m-#{$space} {
-    margin: #{$space}rem;
-  }
-  .my-#{$space} {
-    margin: #{$space}rem 0;
-  }
-  .p-#{$space} {
-    padding: #{$space}rem;
-  }
-  .py-#{$space} {
-    padding: #{$space}rem 0;
-  }
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
